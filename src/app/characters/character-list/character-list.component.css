@@ -4,6 +4,16 @@ table {
 
 mat-form-field {
   width: 100%;
+  background-color: rgb(39, 39, 39);
+  color: yellow;
+}
+
+table,
+ng-container,
+th,
+td {
+  background-color: rgb(39, 39, 39);
+  color: yellow;
 }
 
 .center {

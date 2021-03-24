@@ -28,8 +28,8 @@ export class CharacterListComponent implements OnInit, AfterViewInit {
 
   constructor(
     private router: Router,
-    private characterService: CharacterService,
-    private filmService: FilmService
+    private filmService: FilmService,
+    private characterService: CharacterService
   ) {}
 
   ngOnInit(): void {

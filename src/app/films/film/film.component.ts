@@ -22,7 +22,6 @@ export class FilmComponent implements OnInit {
     this.activeRoute.queryParams.subscribe((params) => {
       this.id = params['id'];
       this.film = this.filmService.getFilmById(this.id);
-      console.log({ id: this.id, film: this.film });
     });
   }
 }
