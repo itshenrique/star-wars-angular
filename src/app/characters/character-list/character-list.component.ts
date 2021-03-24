@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
@@ -84,9 +84,8 @@ export class CharacterListComponent implements OnInit, AfterViewInit {
   }
 
   navigateToFilm(id: number): void {
-    console.log(id);
     this.router.navigate(['/films/'], {
-      queryParams: { film: id },
+      queryParams: { id: id },
     });
   }
 }

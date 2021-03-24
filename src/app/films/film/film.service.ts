@@ -8,7 +8,11 @@ import { Film } from './film';
 export class FilmService {
   constructor() {}
 
-  public getAllFilms() {
-    return <Film[]>films.results;
+  public getFilmById(id: number): Film {
+    return films.results.find((film) => film.id == id)!;
+  }
+
+  public getAllFilms(): Film[] {
+    return films.results;
   }
 }

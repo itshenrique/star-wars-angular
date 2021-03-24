@@ -1,1 +1,25 @@
-<p>film works!</p>
+<mat-card class="medium-size">
+
+  <mat-list>
+
+    <h2 mat-header> {{ film.title }} </h2>
+
+    <mat-list-item>
+      <h4 mat-line> Director: </h4>
+      <p mat-line> {{ film.director }} </p>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line> Producer: </h4>
+      <p mat-line> {{ film.producer }} </p>
+    </mat-list-item>
+
+    <mat-list-item>
+      <h4 mat-line> Release Date: </h4>
+      <p mat-line> {{ film.release_date }} </p>
+    </mat-list-item>
+
+    {{ film.opening_crawl }}
+  </mat-list>
+
+</mat-card>
